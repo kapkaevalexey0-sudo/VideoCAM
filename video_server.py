@@ -215,7 +215,7 @@ async def home():
                     <li>Пригласите других участников по тому же ID комнаты</li>
                 </ol>
                 <p><strong>Для доступа с других устройств:</strong><br>
-                Откройте в браузере: <code>http://{LOCAL_IP}:8000</code></p>
+                Откройте в браузере: <code>https://{LOCAL_IP}:8443</code></p>
             </div>
         </div>
     </body>
@@ -1598,6 +1598,9 @@ async def get_stats():
         "server_started": datetime.now().isoformat()
     }
 
+@app.get("/admin")
+
+    
 if __name__ == "__main__":
     import os
     import ssl
